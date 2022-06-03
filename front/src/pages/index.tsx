@@ -1,5 +1,5 @@
 import Carousel from "../components/Carousel";
-import GridProducts from "../components/GridProducts";
+import GridProducts from "./modules/Gerencia/Products/GridProducts";
 
 export default function Home() {
   return (

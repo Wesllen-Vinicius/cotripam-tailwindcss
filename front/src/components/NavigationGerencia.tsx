@@ -24,7 +24,7 @@ export const NavigationGerencia = () => {
             )
             }
           >
-            Abate Diario
+            Cadastro de Colaboradores
           </Tab>
          
           <Tab
