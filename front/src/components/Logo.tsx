@@ -1,3 +1,3 @@
 export const Logo = () => {
-    return <img src="/src/assets/images/logo.png" width={100}/>
-  }
+  return <img src="/src/assets/logo.png" width={100} />
+}

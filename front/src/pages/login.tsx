@@ -1,6 +1,6 @@
 import Link from '../components/Link'
 
-export default function Login() {
+export  function Login() {
   return (
     <div className="flex flex-col  justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 ">
       <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -63,14 +63,14 @@ export default function Login() {
             <div>
               <button
                 type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md dark:bg-white dark:text-black text-white bg-[#111827] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md dark:bg-white dark:text-black text-white bg-[#111827] hover:bg-[#111827cc] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 <span className="absolute left-0 inset-y-0 flex items-center pl-3"></span>
                 Entrar
               </button>
               <br />
               <Link href="/">
-                <button className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md dark:bg-white dark:text-black text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <button className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md dark:bg-white dark:text-black text-white bg-[#111827] hover:bg-[#111827cc] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                   Voltar ao Inicio
                 </button>
               </Link>

@@ -1,25 +1,25 @@
-import SectionContainer from "./SectionContainer";
-import Footer from "./Footer";
-import { ReactNode } from "react";
-import { Logo } from "./Logo";
+import SectionContainer from './SectionContainer'
+import Footer from './Footer'
+import { ReactNode } from 'react'
+import { Logo } from './Logo'
 import Link from './Link'
-import MobileNav from "./MobileNav";
-import ThemeSwitch from "./ThemeSwitch";
+import MobileNav from './MobileNav'
+import ThemeSwitch from './ThemeSwitch'
 
 interface Props {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const headerNavLinks = [
   {
-    title: "Home",
-    href: "/"
+    title: 'Home',
+    href: '/',
   },
   {
-    title: "Login",
-    href:"/login"
+    title: 'Login',
+    href: '/login',
   },
-];
+]
 
 const LayoutWrapper = ({ children }: Props) => {
   return (
@@ -28,11 +28,11 @@ const LayoutWrapper = ({ children }: Props) => {
         <header className="flex items-center justify-between py-10">
           <div>
             <Link href="/" aria-label="">
-              <div  className="flex items-center justify-between">
+              <div className="flex items-center justify-between">
                 <div className="mr-3">
                   <Logo />
                 </div>
-                <span className="text-black dark:text-white">Cotripam</span>
+                <span className="w- text-black dark:text-white">COTRIPAM</span>
               </div>
             </Link>
           </div>
@@ -48,7 +48,7 @@ const LayoutWrapper = ({ children }: Props) => {
                 </Link>
               ))}
             </div>
-            <ThemeSwitch/>
+            <ThemeSwitch />
             <MobileNav />
           </div>
         </header>
@@ -56,7 +56,7 @@ const LayoutWrapper = ({ children }: Props) => {
         <Footer />
       </div>
     </SectionContainer>
-  );
-};
+  )
+}
 
-export default LayoutWrapper;
+export default LayoutWrapper

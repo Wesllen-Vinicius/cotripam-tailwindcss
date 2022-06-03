@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { ThemeContext } from '../utils/ThemeContext'
 
 const ThemeSwitch = () => {
-  const {theme, setTheme} = useContext(ThemeContext)
+  const { theme, setTheme } = useContext(ThemeContext)
 
   return (
     <button

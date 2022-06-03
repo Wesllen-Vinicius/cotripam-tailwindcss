@@ -1,6 +1,9 @@
-import React, {createContext, useEffect, useState} from "react"
+import React, { createContext, useEffect, useState } from 'react'
 
-function useLocalStorage(key: string, initialValue: string): [string, Function] {
+function useLocalStorage(
+  key: string,
+  initialValue: string
+): [string, Function] {
   const [storedValue, setStoredValue] = useState(() => {
     try {
       const item = window.localStorage.getItem(key)
@@ -28,7 +31,7 @@ interface ContextProps {
 }
 
 export const ThemeContext = createContext<ContextProps>({
-  theme: "",
+  theme: '',
   setTheme: () => null,
 })
 
@@ -37,18 +40,18 @@ interface Props {
 }
 
 export function ThemeProvider(props: Props): JSX.Element {
-  const [theme, setTheme] = useLocalStorage('theme', "light")
+  const [theme, setTheme] = useLocalStorage('theme', 'light')
 
-  useEffect( () => {
-    if(theme === "dark"){
+  useEffect(() => {
+    if (theme === 'dark') {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
     }
-  },[theme])
+  }, [theme])
 
   return (
-    <ThemeContext.Provider value={{theme, setTheme}}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       {props.children}
     </ThemeContext.Provider>
   )

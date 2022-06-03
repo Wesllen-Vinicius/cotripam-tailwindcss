@@ -1,17 +1,16 @@
 import { useState } from 'react'
 import Link from './Link'
 
-
 const headerNavLinks = [
   {
-    title: "Home",
-    href: "/"
+    title: 'Home',
+    href: '/',
   },
   {
-    title: "Login",
-    href:"/login"
-  }
-];
+    title: 'Login',
+    href: '/login',
+  },
+]
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
