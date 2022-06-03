@@ -11,7 +11,7 @@ export default function Footer() {
             <a href="/">VOID</a>
           </div>
           <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-            <a href="#">SoundGarden</a>
+            <a href="#">Cotripam</a>
           </div>
         </div>
       </footer>

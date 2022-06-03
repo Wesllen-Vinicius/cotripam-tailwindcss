@@ -19,16 +19,12 @@ const headerNavLinks = [
     title: "Login",
     href:"/login"
   },
-  {
-    title: "Torne-se Artista",
-    href:"/dashboard"
-  }
 ];
 
 const LayoutWrapper = ({ children }: Props) => {
   return (
     <SectionContainer>
-      <div className="flex h-screen flex-col justify-between">
+      <div className="flex h-screen w-auto flex-col justify-between">
         <header className="flex items-center justify-between py-10">
           <div>
             <Link href="/" aria-label="">
@@ -36,7 +32,7 @@ const LayoutWrapper = ({ children }: Props) => {
                 <div className="mr-3">
                   <Logo />
                 </div>
-                <span className="text-black dark:text-white">Sound Garden</span>
+                <span className="text-black dark:text-white">Cotripam</span>
               </div>
             </Link>
           </div>

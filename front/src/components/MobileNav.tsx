@@ -8,8 +8,8 @@ const headerNavLinks = [
     href: "/"
   },
   {
-    title: "Albuns",
-    href:"/albuns"
+    title: "Login",
+    href:"/login"
   }
 ];
 
