@@ -1,9 +1,9 @@
-import { PerfilEncarregado } from "./perfil";
+import { NavigationEnc } from "../components/NavigationEnc";
 
 export function DashBoardEncarregado() {
   return (
     <div>
-      <PerfilEncarregado/>
+      <NavigationEnc/>
     </div>
   )
 }
