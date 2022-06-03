@@ -1,4 +1,4 @@
-import { NavigationEnc } from "../components/NavigationEnc";
+import { NavigationEnc } from "../../../components/NavigationEncarregado";
 
 export function DashBoardEncarregado() {
   return (

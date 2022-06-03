@@ -1,6 +1,9 @@
 import { Tab } from "@headlessui/react";
-import { FormAbates } from "../pages/formAbates";
-import { FormSerosa } from "../pages/formSerosa";
+import { FormAbates } from "../pages/modules/Encarregado/formAbates";
+import { FormProdutos } from "../pages/modules/Encarregado/formProdutos";
+import { FormSerosa } from "../pages/modules/Encarregado/formSerosa";
+import { FormTripaCozida } from "../pages/modules/Encarregado/formTripaCozida";
+import { FormTripaExportacao } from "../pages/modules/Encarregado/formTripaExportacao";
 import { PerfilEncarregado } from "../pages/perfil";
 import { AnimatedDiv } from "./animations/animatedDiv";
 
@@ -123,10 +126,30 @@ export const NavigationEnc = () => {
             )}
           >
             <AnimatedDiv key={3}>
-            
+            <FormTripaCozida/>
             </AnimatedDiv>
           </Tab.Panel>
 
+          <Tab.Panel
+            className={classNames(
+              "rounded-xl bg-transparent  p-3",
+              "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+            )}
+          >
+            <AnimatedDiv key={4}>
+              <FormProdutos/>
+            </AnimatedDiv>
+          </Tab.Panel>
+          <Tab.Panel
+            className={classNames(
+              "rounded-xl bg-transparent  p-3",
+              "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+            )}
+          >
+            <AnimatedDiv key={4}>
+              <FormTripaExportacao/>
+            </AnimatedDiv>
+          </Tab.Panel>
           <Tab.Panel
             className={classNames(
               "rounded-xl bg-transparent  p-3",

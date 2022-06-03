@@ -1,32 +1,33 @@
 
-export function FormSerosa() {
+export function FormTripaCozida() {
   return (
+
 <div className="max-w-2xl mx-auto bg-white p-16 rounded-md shadow-md">
 	<form>
     <div className="grid gap-6 mb-6 lg:grid-cols-2">
         <div>
-            <label htmlFor="corte_630" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Corte 630</label>
-            <input type="number" id="total" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Km" required/>
+            <label htmlFor="mocoto" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mocoto</label>
+            <input type="number" id="total" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="00.00" required/>
         </div>
         <div>
-            <label htmlFor="condenados" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Corte</label>
+            <label htmlFor="culatra" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Culatra</label>
             <input type="number" id="last_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="00.00" required/>
         </div>
         <div>
-            <label htmlFor="bois" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Bois Abatidos</label>
+            <label htmlFor="abomaso" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Abomaso</label>
             <input type="number" id="company" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="00.00" required/>
         </div>  
         <div>
-            <label htmlFor="" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">...</label>
+            <label htmlFor="fundo" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fundo</label>
             <input type="number" id="phone" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="00.00"  required/>
         </div>
         <div>
-            <label htmlFor="" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">...</label>
+            <label htmlFor="tripaGrossa" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tripa Grossa</label>
             <input type="number" id="website" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="00.00" required/>
         </div>
         <div>
-            <label htmlFor="" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">...</label>
-            <input type="number" id="visitors" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required/>
+            <label htmlFor="tripaFina" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tripa Fina</label>
+            <input type="number" id="visitors" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="00.00" required/>
         </div>
     </div>
     <div className="flex items-start mb-6">

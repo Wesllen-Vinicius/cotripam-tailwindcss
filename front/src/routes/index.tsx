@@ -2,9 +2,9 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from '../pages'
 import FourZeroFour from '../pages/404'
-import { DashBoardEncarregado } from '../pages/dashboard'
+import { DashBoardEncarregado } from '../pages/modules/Encarregado/dashboardEncarregado'
 import { Login } from '../pages/login'
-import { PerfilEncarregado } from '../pages/perfil'
+import { DashBoardGerencia } from '../pages/modules/Gerencia/dashboardGerencia'
 
 
 const Rotas: React.FC = () => {
@@ -12,7 +12,8 @@ const Rotas: React.FC = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="login" element={<Login />} />
-      <Route path="encarregados" element={<DashBoardEncarregado />}/>
+      <Route path="encarregado" element={<DashBoardEncarregado />}/>
+      <Route path="gerencia" element={<DashBoardGerencia />}/>
       <Route path="/*" element={<FourZeroFour />} />
     </Routes>
   )
