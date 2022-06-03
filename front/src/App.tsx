@@ -1,11 +1,17 @@
-function App() {
+import { BrowserRouter } from "react-router-dom";
+import LayoutWrapper from "./components/LayoutWrapper";
+import Rotas from "./routes";
+import {  ThemeProvider } from "./utils/ThemeContext";
 
+function App() {
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <h1 className="text-3xl font-bold text-blue-600">
-      Cotripam 2.0
-      </h1>
-    </div>
+    <BrowserRouter>
+      <ThemeProvider>
+        <LayoutWrapper>
+          <Rotas />
+        </LayoutWrapper>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
