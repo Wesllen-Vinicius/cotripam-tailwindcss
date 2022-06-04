@@ -32,7 +32,7 @@ const LayoutWrapper = ({ children }: Props) => {
                 <div className="mr-3">
                   <Logo />
                 </div>
-                <span className="w- text-black dark:text-white"></span>
+                <span className=" text-blue-800 text-3xl font-extrabold leading-9 tracking-tight dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">COTRIPAM</span>
               </div>
             </Link>
           </div>

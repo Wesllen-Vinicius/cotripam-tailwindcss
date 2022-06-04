@@ -1,6 +1,7 @@
+import { CardGerentes } from '../components/CardsGerentes'
 import { Carousel } from '../components/Carousel'
-import { FormContact } from '../components/FormContact'
-import GridProducts from './modules/Gerencia/Products/GridProducts'
+import { Contacts } from '../components/Contacts'
+import GridProducts from '../components/GridProducts'
 
 export default function Home() {
   return (
@@ -8,8 +9,10 @@ export default function Home() {
       <div className="h-auto">
         <Carousel />
         <GridProducts />
-        <FormContact/>
+        <CardGerentes/>
+        <Contacts/> 
       </div>
+
     </>
   )
 }
