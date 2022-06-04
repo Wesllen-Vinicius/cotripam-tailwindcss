@@ -6,14 +6,13 @@ import { DashBoardEncarregado } from '../pages/modules/Encarregado/dashboardEnca
 import { Login } from '../pages/login'
 import { DashBoardGerencia } from '../pages/modules/Gerencia/dashboardGerencia'
 
-
 const Rotas: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="login" element={<Login />} />
-      <Route path="encarregado" element={<DashBoardEncarregado />}/>
-      <Route path="gerencia" element={<DashBoardGerencia />}/>
+      <Route path="encarregado" element={<DashBoardEncarregado />} />
+      <Route path="gerencia" element={<DashBoardGerencia />} />
       <Route path="/*" element={<FourZeroFour />} />
     </Routes>
   )

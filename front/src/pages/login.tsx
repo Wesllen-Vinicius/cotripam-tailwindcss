@@ -1,6 +1,6 @@
 import Link from '../components/Link'
 
-export  function Login() {
+export function Login() {
   return (
     <div className="flex flex-col  justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 ">
       <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">

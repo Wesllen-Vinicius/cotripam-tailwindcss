@@ -4,6 +4,6 @@
 
 @layer {
   body {
-    @apply bg-slate-100 dark:bg-[#2b2b3f];
+    @apply bg-slate-100 dark:bg-[#2b2b3f] h-auto;
   }
 }

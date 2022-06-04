@@ -13,7 +13,8 @@ export default function FourZeroFour() {
           Desculpe, não conseguimos localizar esta pagina.
         </p>
         <p className="mb-8">
-          Desculpe pelo incoveniente, clique no botão abaixo para voltar para o Inicio.
+          Desculpe pelo incoveniente, clique no botão abaixo para voltar para o
+          Inicio.
         </p>
         <Link href="/">
           <button className="focus:shadow-outline-blue inline rounded-lg border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-blue-700 focus:outline-none dark:hover:bg-blue-500">

@@ -1,9 +1,9 @@
-import { NavigationEnc } from "../../../components/NavigationEncarregado";
+import { NavigationEnc } from '../../../components/NavigationEncarregado'
 
 export function DashBoardEncarregado() {
   return (
     <div>
-      <NavigationEnc/>
+      <NavigationEnc />
     </div>
   )
 }

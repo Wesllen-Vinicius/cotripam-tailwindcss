@@ -5,7 +5,12 @@ module.exports = {
     extend: {},
   },
   variants: {
-    opacity: ({ after }) => after(['disabled'])
+    opacity: ({ after }) => after(['disabled']),
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('tailwindcss'),
+    require('autoprefixer'),
+    require('@tailwindcss/forms'),
+  ],
 }

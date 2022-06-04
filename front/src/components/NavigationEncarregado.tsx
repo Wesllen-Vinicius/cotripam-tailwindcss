@@ -1,15 +1,14 @@
-import { Tab } from "@headlessui/react";
-import { FormAbates } from "../pages/modules/Encarregado/formAbates";
-import { FormProdutos } from "../pages/modules/Encarregado/formProdutos";
-import { FormSerosa } from "../pages/modules/Encarregado/formSerosa";
-import { FormTripaCozida } from "../pages/modules/Encarregado/formTripaCozida";
-import { FormTripaExportacao } from "../pages/modules/Encarregado/formTripaExportacao";
-import { PerfilEncarregado } from "../pages/perfil";
-import { AnimatedDiv } from "./animations/animatedDiv";
-
+import { Tab } from '@headlessui/react'
+import { FormAbates } from '../pages/modules/Encarregado/formAbates'
+import { FormProdutos } from '../pages/modules/Encarregado/formProdutos'
+import { FormSerosa } from '../pages/modules/Encarregado/formSerosa'
+import { FormTripaCozida } from '../pages/modules/Encarregado/formTripaCozida'
+import { FormTripaExportacao } from '../pages/modules/Encarregado/formTripaExportacao'
+import { PerfilEncarregado } from '../pages/perfil'
+import { AnimatedDiv } from './animations/animatedDiv'
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(' ')
 }
 
 export const NavigationEnc = () => {
@@ -19,78 +18,78 @@ export const NavigationEnc = () => {
         <Tab.List className="flex space-x-1 rounded-xl bg-gray-300 p-1">
           <Tab
             className={({ selected }) =>
-            classNames(
-              'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
-              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
-              selected
-                ? 'bg-white shadow'
-                : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
-            )
+              classNames(
+                'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                selected
+                  ? 'bg-white shadow'
+                  : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
+              )
             }
           >
             Abate Diario
           </Tab>
           <Tab
             className={({ selected }) =>
-            classNames(
-              'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
-              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
-              selected
-                ? 'bg-white shadow'
-                : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
-            )
+              classNames(
+                'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                selected
+                  ? 'bg-white shadow'
+                  : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
+              )
             }
           >
             Serosa
           </Tab>
           <Tab
             className={({ selected }) =>
-            classNames(
-              'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
-              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
-              selected
-                ? 'bg-white shadow'
-                : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
-            )
+              classNames(
+                'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                selected
+                  ? 'bg-white shadow'
+                  : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
+              )
             }
           >
             Tripa Cozida
           </Tab>
           <Tab
             className={({ selected }) =>
-            classNames(
-              'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
-              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
-              selected
-                ? 'bg-white shadow'
-                : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
-            )
+              classNames(
+                'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                selected
+                  ? 'bg-white shadow'
+                  : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
+              )
             }
           >
             Produtos
           </Tab>
           <Tab
             className={({ selected }) =>
-            classNames(
-              'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
-              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
-              selected
-                ? 'bg-white shadow'
-                : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
-            )
+              classNames(
+                'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                selected
+                  ? 'bg-white shadow'
+                  : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
+              )
             }
           >
             Tripa para Exportação
           </Tab>
           <Tab
             className={({ selected }) =>
-            classNames(
-              'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
-              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
-              selected
-                ? 'bg-white shadow'
-                : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
-            )
+              classNames(
+                'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                selected
+                  ? 'bg-white shadow'
+                  : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
+              )
             }
           >
             Perfil
@@ -99,69 +98,69 @@ export const NavigationEnc = () => {
         <Tab.Panels className="mt-2">
           <Tab.Panel
             className={classNames(
-              "rounded-xl bg-transparent p-3",
-              "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+              'rounded-xl bg-transparent p-3',
+              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
             )}
           >
             <AnimatedDiv key={1}>
-              <FormAbates/>
+              <FormAbates />
             </AnimatedDiv>
           </Tab.Panel>
 
           <Tab.Panel
             className={classNames(
-              "rounded-xl bg-transparent p-3",
-              "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+              'rounded-xl bg-transparent p-3',
+              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
             )}
           >
             <AnimatedDiv key={2}>
-              <FormSerosa/>
+              <FormSerosa />
             </AnimatedDiv>
           </Tab.Panel>
 
           <Tab.Panel
             className={classNames(
-              "rounded-xl bg-transparent  p-3",
-              "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+              'rounded-xl bg-transparent  p-3',
+              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
             )}
           >
             <AnimatedDiv key={3}>
-            <FormTripaCozida/>
+              <FormTripaCozida />
             </AnimatedDiv>
           </Tab.Panel>
 
           <Tab.Panel
             className={classNames(
-              "rounded-xl bg-transparent  p-3",
-              "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+              'rounded-xl bg-transparent  p-3',
+              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
             )}
           >
             <AnimatedDiv key={4}>
-              <FormProdutos/>
+              <FormProdutos />
             </AnimatedDiv>
           </Tab.Panel>
           <Tab.Panel
             className={classNames(
-              "rounded-xl bg-transparent  p-3",
-              "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+              'rounded-xl bg-transparent  p-3',
+              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
             )}
           >
             <AnimatedDiv key={4}>
-              <FormTripaExportacao/>
+              <FormTripaExportacao />
             </AnimatedDiv>
           </Tab.Panel>
           <Tab.Panel
             className={classNames(
-              "rounded-xl bg-transparent  p-3",
-              "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+              'rounded-xl bg-transparent  p-3',
+              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
             )}
           >
             <AnimatedDiv key={4}>
-              <PerfilEncarregado/>
+              <PerfilEncarregado />
             </AnimatedDiv>
           </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
     </div>
-  );
-};
+  )
+}
