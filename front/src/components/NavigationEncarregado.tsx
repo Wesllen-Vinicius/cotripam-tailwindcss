@@ -4,7 +4,7 @@ import { FormProdutos } from '../pages/modules/Encarregado/formProdutos'
 import { FormSerosa } from '../pages/modules/Encarregado/formSerosa'
 import { FormTripaCozida } from '../pages/modules/Encarregado/formTripaCozida'
 import { FormTripaExportacao } from '../pages/modules/Encarregado/formTripaExportacao'
-import { PerfilEncarregado } from '../pages/perfil'
+import { PerfilEncarregado } from '../pages/modules/Encarregado/perfilEncarregado'
 import { AnimatedDiv } from './animations/animatedDiv'
 
 function classNames(...classes: string[]) {

@@ -1,6 +1,6 @@
 import { Tab } from '@headlessui/react'
-import { FormSerosa } from '../pages/modules/Encarregado/formSerosa'
 import { FormColaboradores } from '../pages/modules/Gerencia/formColaboradores'
+import { PerfilGerencia } from '../pages/modules/Gerencia/perfilGerencia'
 import { AnimatedDiv } from './animations/animatedDiv'
 
 function classNames(...classes: string[]) {
@@ -59,7 +59,7 @@ export const NavigationGerencia = () => {
             )}
           >
             <AnimatedDiv key={2}>
-              <FormSerosa />
+              <PerfilGerencia/>
             </AnimatedDiv>
           </Tab.Panel>
         </Tab.Panels>

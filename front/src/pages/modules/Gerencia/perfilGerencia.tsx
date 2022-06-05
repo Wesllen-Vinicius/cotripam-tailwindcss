@@ -1,8 +1,21 @@
-export function FormColaboradores() {
+export function PerfilGerencia() {
   return (
-    <div className="max-w-2xl mx-auto bg-white p-16">
+    <div className="max-w-2xl mx-auto bg-white p-16 rounded-md shadow-md">
       <form>
-        <div className="grid gap-6 mb-6 lg:grid-cols-2">
+        <div>
+          <div className="mt-1 flex items-center justify-center">
+            <span className="inline-block h-24 w-24 rounded-full overflow-hidden bg-gray-100 ">
+              <svg
+                className="h-full w-full text-gray-300 "
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div className="grid gap-6 mb-6 lg:grid-cols-2 mt-8">
           <div>
             <label
               htmlFor="nome"
@@ -12,25 +25,23 @@ export function FormColaboradores() {
             </label>
             <input
               type="text"
-              id="first_name"
+              id="nome"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Exemplo: John"
-              required
+              disabled
             />
           </div>
           <div>
             <label
-              htmlFor="funcao"
+              htmlFor="last_name"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
               Função
             </label>
             <input
               type="text"
-              id="funcao"
+              id="last_name"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Doe"
-              required
+              disabled
             />
           </div>
           <div>
@@ -42,10 +53,9 @@ export function FormColaboradores() {
             </label>
             <input
               type="text"
-              id="company"
+              id="comarca"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Flowbite"
-              required
+              disabled
             />
           </div>
           <div>
@@ -59,33 +69,24 @@ export function FormColaboradores() {
               type="tel"
               id="contato"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="123-45-678"
-              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-              required
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >
-              Email
-            </label>
-            <input
-              type="url"
-              id="email"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="flowbite.com"
-              required
+              disabled
             />
           </div>
         </div>
-        <button
-          type="submit"
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Cadastrar
-        </button>
+        <div className="mb-6">
+          <label
+            htmlFor="email"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+          >
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            disabled
+          />
+        </div>
       </form>
     </div>
   )
