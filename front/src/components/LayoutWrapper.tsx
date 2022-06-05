@@ -24,7 +24,7 @@ const headerNavLinks = [
 const LayoutWrapper = ({ children }: Props) => {
   return (
     <SectionContainer>
-      <div className="flex h-screen w-auto flex-col justify-between">
+      <div className="flex h-screen w-auto flex-col justify-between ">
         <header className="flex items-center justify-between py-10">
           <div>
             <Link href="/" aria-label="">

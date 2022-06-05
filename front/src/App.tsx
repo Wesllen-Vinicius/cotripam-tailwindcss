@@ -3,6 +3,7 @@ import LayoutWrapper from './components/LayoutWrapper'
 import Rotas from './routes'
 import { ThemeProvider } from './utils/ThemeContext'
 
+
 function App() {
   return (
     <BrowserRouter>
