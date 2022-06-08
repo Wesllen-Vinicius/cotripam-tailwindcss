@@ -66,7 +66,7 @@ export const NavigationEnc = () => {
               )
             }
           >
-            Produtos
+           Inssumos
           </Tab>
           <Tab
             className={({ selected }) =>

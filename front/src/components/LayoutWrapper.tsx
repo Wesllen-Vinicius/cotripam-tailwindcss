@@ -36,7 +36,6 @@ const LayoutWrapper = ({ children }: Props) => {
               </div>
             </Link>
           </div>
-
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">
               {headerNavLinks.map((link) => (
@@ -53,7 +52,10 @@ const LayoutWrapper = ({ children }: Props) => {
             <MobileNav />
           </div>
         </header>
-        <main className="mb-auto">{children}</main>
+        <main className="mb-auto">
+
+          {children}
+          </main>
         <Footer />
       </div>
     </SectionContainer>
