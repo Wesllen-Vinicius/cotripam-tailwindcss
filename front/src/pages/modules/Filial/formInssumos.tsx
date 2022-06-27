@@ -1,95 +1,126 @@
-export function FormTripaCozida() {
+export function FormInssumos() {
   return (
     <div className="max-w-2xl mx-auto bg-white p-16 rounded-md shadow-md">
       <form>
         <div className="grid gap-6 mb-6 lg:grid-cols-2">
           <div>
             <label
-              htmlFor="mocoto"
+              htmlFor="salGrosso"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Mocoto
+              Sal Grosso
             </label>
             <input
               type="number"
               id="total"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
+              placeholder="0"
               required
             />
           </div>
           <div>
             <label
-              htmlFor="culatra"
+              htmlFor="salFino"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Culatra
+              Sal Fino
             </label>
             <input
               type="number"
               id="last_name"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
+              placeholder="0"
               required
             />
           </div>
           <div>
             <label
-              htmlFor="abomaso"
+              htmlFor="metabissulfito"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Abomaso
+              Metabissulfito
             </label>
             <input
               type="number"
               id="company"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
+              placeholder="0"
               required
             />
           </div>
           <div>
             <label
-              htmlFor="fundo"
+              htmlFor="peroxido"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Fundo
+              Peroxido
             </label>
             <input
               type="number"
               id="phone"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
+              placeholder="0"
               required
             />
           </div>
           <div>
             <label
-              htmlFor="tripaGrossa"
+              htmlFor="bombonas"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Tripa Grossa
+              Bombonas
             </label>
             <input
               type="number"
               id="website"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
+              placeholder="0"
               required
             />
           </div>
           <div>
             <label
-              htmlFor="tripaFina"
+              htmlFor="bombonas"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Tripa Fina
+              Barrilha
             </label>
             <input
               type="number"
-              id="visitors"
+              id="website"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
+              placeholder="0"
+              required
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="bombonas"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >
+              Toxicos
+            </label>
+            <input
+              type="number"
+              id="website"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="0"
+              required
+            />
+
+          </div>
+          <div>
+            <label
+              htmlFor="bombonas"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >
+              Cal-Virgem
+            </label>
+            <input
+              type="number"
+              id="website"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="0"
               required
             />
           </div>

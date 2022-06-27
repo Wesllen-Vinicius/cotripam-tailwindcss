@@ -1,4 +1,4 @@
-export function FormTripaExportacao() {
+export function FormColaboradoresEncarregado() {
   return (
     <div className="max-w-2xl mx-auto bg-white p-16 rounded-md shadow-md">
       <form>
@@ -8,13 +8,41 @@ export function FormTripaExportacao() {
               htmlFor="mocoto"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Tripa Reta
+              Nome
             </label>
             <input
-              type="number"
+              type="text"
               id="total"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
+              placeholder="nome"
+              required
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="mocoto"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >
+              Numero do Registro
+            </label>
+            <input
+              type="text"
+              id="total"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="mocoto"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >
+              PIS/PASÉP
+            </label>
+            <input
+              type="text"
+              id="total"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               required
             />
           </div>
@@ -23,75 +51,58 @@ export function FormTripaExportacao() {
               htmlFor="culatra"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Tripa Torta 1º Corte
+              Data Admissão
             </label>
             <input
-              type="number"
-              id="last_name"
+              type="date"
+              id="data"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
               required
             />
           </div>
-          <div>
-            <label
-              htmlFor="abomaso"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+          <div className="mt-3 flex rounded-md shadow-sm">
+            <span className="mt-2 h-10 w-[80px]  dark:text-black  inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+              Especialização
+            </span>
+            <select
+              className="form-select appearance-none
+                        w-full
+                        px-3
+                        py-1.5
+                        text-gray-700
+                        bg-white bg-clip-padding bg-no-repeat
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        mt-2
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              aria-label="Default select example"
             >
-              Tripa Torta 2º Corte
-            </label>
-            <input
-              type="number"
-              id="company"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
-              required
-            />
+              <option selected>Selecionar</option>
+              <option></option>
+            </select>
           </div>
-          <div>
-            <label
-              htmlFor="fundo"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+          <div className="mt-3 flex rounded-md shadow-sm">
+            <span className="mt-2 h-10 w-[80px]  dark:text-black  inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+              EPI`S
+            </span>
+            <select
+              className="form-select appearance-none
+                        w-full
+                        px-3
+                        py-1.5
+                        text-gray-700
+                        bg-white bg-clip-padding bg-no-repeat
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        mt-2
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              aria-label="Default select example"
             >
-              Culatra
-            </label>
-            <input
-              type="number"
-              id="phone"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
-              required
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="tripaGrossa"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >
-              Fundo
-            </label>
-            <input
-              type="number"
-              id="website"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
-              required
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="tripaGrossa"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >
-              Mucosa
-            </label>
-            <input
-              type="number"
-              id="website"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="00.00"
-              required
-            />
+              <option selected>Selecionar</option>
+              <option></option>
+            </select>
           </div>
         </div>
         <div className="flex items-start mb-6">

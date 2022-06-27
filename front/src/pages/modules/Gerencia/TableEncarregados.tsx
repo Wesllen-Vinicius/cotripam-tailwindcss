@@ -1,6 +1,6 @@
-export function TableTripaCozida() {
+export function TableEncarregados() {
   return (
-    <div className="flex flex-col">
+    <>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-5">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -23,7 +23,7 @@ export function TableTripaCozida() {
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+            <tr className="border-b  dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
               <th
                 scope="row"
                 className="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
@@ -122,9 +122,7 @@ export function TableTripaCozida() {
         </table>
       </div>
       <div className="mt-5 justify-center">
-
-      
-      <nav aria-label="Page navigation example">
+        <nav aria-label="Page navigation example">
           <ul className="inline-flex -space-x-px">
             <li>
               <a
@@ -185,9 +183,7 @@ export function TableTripaCozida() {
             </li>
           </ul>
         </nav>
-        </div>
       </div>
-      
-    
+    </>
   )
 }

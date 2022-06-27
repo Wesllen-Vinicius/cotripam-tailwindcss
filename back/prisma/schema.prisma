@@ -1,0 +1,233 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// generator docs {
+//   provider = "node node_modules/prisma-docs-generator"
+// }
+
+// generator dbml {
+//   provider = "prisma-dbml-generator"
+// }
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+
+model Funcoes {
+  id          Int    @id @default(autoincrement())
+  nome_funcao String
+
+  @@map("funcoes")
+}
+
+model Permissoes {
+  id        Int    @id @default(autoincrement())
+  descricao String
+
+  Permissoes_Perfil Permissoes_Perfil[]
+  @@map("permissoes")
+}
+
+model Permissoes_Perfil {
+  id           Int        @id @default(autoincrement())
+  permissao_id Permissoes @relation(fields: [permissoesId], references: [id])
+  perfil_id    Perfil     @relation(fields: [perfilId], references: [id])
+
+  permissoesId Int
+  perfilId     Int
+  @@map("permissoes_perfil")
+}
+
+model Perfil {
+  id         Int                 @id @default(autoincrement())
+  descricao  String
+  permissoes Permissoes_Perfil[]
+
+  @@map("perfil")
+}
+
+model Unidade {
+  id               Int        @id @default(autoincrement())
+  nome             String
+  created_At       DateTime   @default(now())
+  meta_tripaCozida Float
+  meta_serosa      Float
+  User             User[]
+  Abate            Abate[]
+  Produto          Produto[]
+  producao         Producao[]
+
+  @@map("unidades")
+}
+
+model User {
+  id           Int       @id @default(autoincrement())
+  nome         String
+  email        String    @unique
+  password     String
+  created_At   DateTime  @default(now())
+  unidade_Id   Int
+  unidade_user Unidade   @relation(fields: [unidade_Id], references: [id])
+  Abate        Abate[]
+  Produto      Produto[]
+
+  Producao Producao[]
+  @@map("users")
+}
+
+model Categoria {
+  id         Int       @id @default(autoincrement())
+  media_prod Int?
+  Produto    Produto[]
+
+  @@map("categorias")
+}
+
+model Produto {
+  id           Int       @id @default(autoincrement())
+  descricao    String
+  created_At   DateTime  @default(now())
+  modifi_At    DateTime?
+  categoria_id Int
+  categoria    Categoria @relation(fields: [categoriaId], references: [id])
+
+  Unidade       Unidade?        @relation(fields: [unidadeId], references: [id])
+  unidadeId     Int?
+  User          User?           @relation(fields: [userId], references: [id])
+  userId        Int?
+  categoriaId   Int
+  Receita_itens Receita_itens[]
+  ProducaoItem  ProducaoItem[]
+  @@map("produtos")
+}
+
+model Abate {
+  id            Int       @id @default(autoincrement())
+  createdAt     DateTime  @default(now())
+  modifiAt      DateTime?
+  abate         Float
+  bois          Float
+  vacas         Float
+  total         Float
+  condenados    Float
+  unidade_id    Int?
+  userId        Int?
+  unidade_abate Unidade?  @relation(fields: [unidade_id], references: [id])
+  user          User?     @relation(fields: [userId], references: [id])
+
+  @@map("abates")
+}
+
+model Receita_itens {
+  id         Int     @id @default(autoincrement())
+  receita_id Int
+  receita    Receita @relation(fields: [receitaId], references: [id])
+  produto_id Int
+  produto    Produto @relation(fields: [produtoId], references: [id])
+  quantidade Int
+  receitaId  Int
+  produtoId  Int
+}
+
+model Receita {
+  id            Int             @id @default(autoincrement())
+  descricao     String
+  receita_itens Receita_itens[]
+}
+
+model ProducaoItem {
+  id         Int        @id @default(autoincrement())
+  produto    Produto    @relation(fields: [produtoId], references: [id])
+  quantidade Int
+  produtoId  Int
+  Producao   Producao[]
+}
+
+model Producao {
+  id             Int          @id @default(autoincrement())
+  createdAt      DateTime     @default(now())
+  producaoItem   ProducaoItem @relation(fields: [producaoItemId], references: [id])
+  user           User         @relation(fields: [userId], references: [id])
+  unidade        Unidade      @relation(fields: [unidadeId], references: [id])
+  unidadeId      Int
+  userId         Int
+  producaoItemId Int
+}
+
+// model Serosa {
+//   id           Int          @id @default(autoincrement())
+//   createdAt    DateTime     @default(now())
+//   modifiAt     DateTime?
+//   corte_630    Float
+//   corte_470    Float
+//   corte_320    Float
+//   corte_170    Float
+//   km_total     Float
+//   media        Float
+//   userId       Int?
+//   unidadeId    Int?
+//   unidadeAbate Unidade?     @relation(fields: [unidadeId], references: [id])
+//   user         Encarregado? @relation(fields: [userId], references: [id])
+
+//   @@map("serosa")
+// }
+
+// model TripaCozida {
+//   id           Int          @id @default(autoincrement())
+//   createdAt    DateTime     @default(now())
+//   modifiAt     DateTime?
+//   mocoto       Float
+//   culatra      Float
+//   abomaso      Float
+//   fundo        Float
+//   tripa_grossa Float
+//   tripa_fina   Float
+//   total        Float
+//   userId       Int?
+//   unidadeId    Int?
+//   unidadeAbate Unidade?     @relation(fields: [unidadeId], references: [id])
+//   encarregado  Encarregado? @relation(fields: [userId], references: [id])
+
+//   @@map("tripaCozida")
+// }
+
+// model TripaExportacao {
+//   id            Int          @id @default(autoincrement())
+//   createdAt     DateTime     @default(now())
+//   modifiAt      DateTime?
+//   tripa_reta    Float
+//   tripa_torta1c Float
+//   tripa_torta2c Float
+//   culatra       Float
+//   fundo         Float
+//   userId        Int?
+//   unidadeId     Int?
+//   unidadeAbate  Unidade?     @relation(fields: [unidadeId], references: [id])
+//   encarregado   Encarregado? @relation(fields: [userId], references: [id])
+
+//   @@map("tripaExportacao")
+// }
+
+// model Insumos {
+//   id             Int          @id @default(autoincrement())
+//   createdAt      DateTime     @default(now())
+//   modifiAt       DateTime?
+//   sal_fino       Float
+//   sal_grosso     Float
+//   metabissulfito Float
+//   peroxido       Float
+//   bombonas       Float
+//   userId         Int?
+//   unidadeId      Int?
+//   unidadeAbate   Unidade?     @relation(fields: [unidadeId], references: [id])
+//   Encarregado    Encarregado? @relation(fields: [userId], references: [id])

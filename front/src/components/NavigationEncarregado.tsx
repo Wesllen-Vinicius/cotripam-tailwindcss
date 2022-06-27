@@ -1,10 +1,11 @@
 import { Tab } from '@headlessui/react'
-import { FormAbates } from '../pages/modules/Encarregado/formAbates'
-import { FormProdutos } from '../pages/modules/Encarregado/formProdutos'
-import { FormSerosa } from '../pages/modules/Encarregado/formSerosa'
-import { FormTripaCozida } from '../pages/modules/Encarregado/formTripaCozida'
-import { FormTripaExportacao } from '../pages/modules/Encarregado/formTripaExportacao'
-import { PerfilEncarregado } from '../pages/modules/Encarregado/perfilEncarregado'
+import { FormAbates } from '../pages/modules/Filial/formAbates'
+import { FormColaboradoresEncarregado } from '../pages/modules/Filial/formColaboradores'
+import { FormInssumos } from '../pages/modules/Filial/formInssumos'
+import { FormSerosa } from '../pages/modules/Filial/formSerosa'
+import { FormTripaCozida } from '../pages/modules/Filial/formTripaCozida'
+import { FormTripaExportacao } from '../pages/modules/Filial/formTripaExportacao'
+import { PerfilEncarregado } from '../pages/modules/Filial/perfilEncarregado'
 import { AnimatedDiv } from './animations/animatedDiv'
 
 function classNames(...classes: string[]) {
@@ -53,7 +54,7 @@ export const NavigationEnc = () => {
               )
             }
           >
-            Tripa Cozida
+            Pré-Cozidos
           </Tab>
           <Tab
             className={({ selected }) =>
@@ -66,7 +67,7 @@ export const NavigationEnc = () => {
               )
             }
           >
-           Inssumos
+            Inssumos
           </Tab>
           <Tab
             className={({ selected }) =>
@@ -92,8 +93,22 @@ export const NavigationEnc = () => {
               )
             }
           >
+            Cadastro Colaborador
+          </Tab>
+          <Tab
+            className={({ selected }) =>
+              classNames(
+                'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                selected
+                  ? 'bg-white shadow'
+                  : 'text-blue-700 hover:bg-white/[0.12] hover:text-white'
+              )
+            }
+          >
             Perfil
           </Tab>
+          
         </Tab.List>
         <Tab.Panels className="mt-2">
           <Tab.Panel
@@ -136,7 +151,7 @@ export const NavigationEnc = () => {
             )}
           >
             <AnimatedDiv key={4}>
-              <FormProdutos />
+              <FormInssumos />
             </AnimatedDiv>
           </Tab.Panel>
           <Tab.Panel
@@ -147,6 +162,16 @@ export const NavigationEnc = () => {
           >
             <AnimatedDiv key={4}>
               <FormTripaExportacao />
+            </AnimatedDiv>
+          </Tab.Panel>
+          <Tab.Panel
+            className={classNames(
+              'rounded-xl bg-transparent  p-3',
+              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
+            )}
+          >
+            <AnimatedDiv key={4}>
+              <FormColaboradoresEncarregado />
             </AnimatedDiv>
           </Tab.Panel>
           <Tab.Panel

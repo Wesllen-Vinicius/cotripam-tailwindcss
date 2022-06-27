@@ -1,81 +1,95 @@
-export function FormProdutos() {
+export function FormAbates() {
   return (
     <div className="max-w-2xl mx-auto bg-white p-16 rounded-md shadow-md">
       <form>
         <div className="grid gap-6 mb-6 lg:grid-cols-2">
           <div>
             <label
-              htmlFor="salGrosso"
+              htmlFor="total"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Sal Grosso
+              Total do Abate
             </label>
             <input
               type="number"
               id="total"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="0"
+              placeholder="00.00"
               required
             />
           </div>
           <div>
             <label
-              htmlFor="salFino"
+              htmlFor="condenados"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Sal Fino
+              Condenados
             </label>
             <input
               type="number"
               id="last_name"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="0"
+              placeholder="00.00"
               required
             />
           </div>
           <div>
             <label
-              htmlFor="metabissulfito"
+              htmlFor="bois"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Metabissulfito
+              Bois Abatidos
             </label>
             <input
               type="number"
               id="company"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="0"
+              placeholder="00.00"
               required
             />
           </div>
           <div>
             <label
-              htmlFor="peroxido"
+              htmlFor=""
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Peroxido
+              Vacas Abatidas
             </label>
             <input
               type="number"
               id="phone"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="0"
+              placeholder="00.00"
               required
             />
           </div>
           <div>
             <label
-              htmlFor="bombonas"
+              htmlFor=""
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Bombonas
+              Motivo
             </label>
             <input
-              type="number"
-              id="website"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="0"
-              required
+              className="
+               form-control
+               block
+               w-full
+               px-3
+               py-1.5
+               text-base
+               font-normal
+               text-gray-700
+               bg-white bg-clip-padding
+               border border-solid border-gray-300
+               rounded
+               transition
+               ease-in-out
+               m-0
+               focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+             "
+              id="exampleFormControlTextarea1"
+              placeholder="Your message"
             />
           </div>
         </div>
